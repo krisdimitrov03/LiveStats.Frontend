@@ -9,3 +9,5 @@ export const logout = `${baseUrl}/users/logout`;
 export const competitionsBaseUrl = `${baseUrl}/football/competitions`;
 
 export const competitionsByCountry = `${competitionsBaseUrl}/bynationality`;
+
+export const competitionDetails = (id) => `${competitionsBaseUrl}/${id}`;

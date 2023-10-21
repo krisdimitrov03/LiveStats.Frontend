@@ -4,7 +4,7 @@ export default function CompetitionsList({ data }) {
     return (
         <div className="nationality-competitions">
             <div className="country">
-                <img src={data.nationality.imageUrl} />
+                <img src={data.nationality.imageUrl} alt="" />
                 <span>{data.nationality.name}</span>
             </div>
             <div className="competitions">

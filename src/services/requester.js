@@ -2,7 +2,7 @@ function request(method, url, data) {
     let options = {};
     //userContext
 
-    if (method != 'GET') {
+    if (method !== 'GET') {
         options = {
             method,
             headers: {
