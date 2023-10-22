@@ -1,0 +1,9 @@
+.root {
+    display: flex;
+}
+
+.details {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: white;
+}

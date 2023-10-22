@@ -1,6 +1,8 @@
-function request(method, url, data) {
+import UserContext from "../contexts/UserContext";
+import * as cookieService from "./cookieService"
+
+function request(method, url, data, user = null) {
     let options = {};
-    //userContext
 
     if (method !== 'GET') {
         options = {
@@ -12,13 +14,12 @@ function request(method, url, data) {
         }
     }
 
-    //Add user check
-    // if(user) {
-    //     options.headers = {
-    //         ...(options.headers),
-    //         'Authorization': 'Bearer ' + user.accessToken
-    //     }
-    // }
+    if(user) {
+        options.headers = {
+            ...(options.headers),
+            'Authorization': 'Bearer ' + cookieService.getCookie('Auth-Token')
+        }
+    }
 
     return fetch(url, options)
         .then(res => res.json());

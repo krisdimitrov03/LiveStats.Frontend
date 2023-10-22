@@ -1,3 +1,20 @@
-.root img {
-    height: 30px;
+.root {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.root .logo {
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+    border-radius: 1rem;
+    background-color: white;
+    margin-right: 2rem;
+}
+
+.root div img {
+    height: 1rem;
+    margin-right: 0.5rem;
 }

@@ -1,35 +1,19 @@
-import { useState, useEffect } from 'react'
-import * as service from '../../services/competitionService'
 import style from './CompetitionDetails.module.css'
 
-export default function CompetitionDetails({ id }) {
-    const [comp, setComp] = useState({});
-
-    useEffect(() => {
-        onComponentLoad();
-    }, []);
-
-    const onComponentLoad = async () => {
-        const competition = await service.getDetails(id);
-        console.log(comp);
-        setComp(competition);
-
-    }
-
+export default function CompetitionDetails({ comp }) {
     return (
         <div className={style.root}>
-            {
-                comp == {}
-                    ? <span>Loading...</span>
-                    : <>
-                        <img src={comp.imageUrl} alt="" />
-                        <span>{comp.name}</span>
-                        <img src={comp.nationalityImageUrl} alt="" />
-                        <span>{comp.nationalityName}</span>
-                        <p>Season: {comp.season}</p>
-                    </>
-            }
-
+            <img className={style.logo} src={comp.imageUrl} alt="" />
+            <div>
+                <div>
+                    <h1>{comp.name}</h1>
+                </div>
+                <div>
+                    <img src={comp.nationalityImageUrl} alt="" />
+                    <span>{comp.nationalityName}</span>
+                    <p>Season: {comp.season}</p>
+                </div>
+            </div>
         </div>
     )
 }
