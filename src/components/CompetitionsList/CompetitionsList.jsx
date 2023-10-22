@@ -1,8 +1,8 @@
-
+import style from './CompetitionsList.module.css'
 
 export default function CompetitionsList({ data }) {
     return (
-        <div className="nationality-competitions">
+        <div className={style.nationalityCompetitions}>
             <div className="country">
                 <img src={data.nationality.imageUrl} alt="" />
                 <span>{data.nationality.name}</span>

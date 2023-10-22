@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import * as service from '../../services/competitionService'
+import style from './CompetitionDetails.module.css'
 
 export default function CompetitionDetails({ id }) {
     const [comp, setComp] = useState({});
@@ -16,7 +17,7 @@ export default function CompetitionDetails({ id }) {
     }
 
     return (
-        <div className="root">
+        <div className={style.root}>
             <img src={comp.imageUrl} alt="" />
             <span>{comp.name}</span>
             <img src={comp.nationalityImageUrl} alt="" />
