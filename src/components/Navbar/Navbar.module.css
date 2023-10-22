@@ -1,0 +1,41 @@
+#root {
+    margin-bottom: 0!important;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #023a6a;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logo svg {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+.navBtn {
+    margin: 0 0.5rem;
+}
+
+#login {
+    border: none;
+}
+
+#login:hover {
+    border: none;
+    background-color: white;
+    color: #023a6a;
+    text-decoration:underline;
+}
+
+#register {
+    background-color: #023a6a;
+    border: none;
+}
+
+#register:hover {
+    background-color: #0191ff;
+}

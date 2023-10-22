@@ -18,11 +18,18 @@ export default function CompetitionDetails({ id }) {
 
     return (
         <div className={style.root}>
-            <img src={comp.imageUrl} alt="" />
-            <span>{comp.name}</span>
-            <img src={comp.nationalityImageUrl} alt="" />
-            <span>{comp.nationalityName}</span>
-            <p>Season: {comp.season}</p>
+            {
+                comp == {}
+                    ? <span>Loading...</span>
+                    : <>
+                        <img src={comp.imageUrl} alt="" />
+                        <span>{comp.name}</span>
+                        <img src={comp.nationalityImageUrl} alt="" />
+                        <span>{comp.nationalityName}</span>
+                        <p>Season: {comp.season}</p>
+                    </>
+            }
+
         </div>
     )
 }

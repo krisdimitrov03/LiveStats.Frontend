@@ -1,0 +1,29 @@
+.match {
+    background-color: white;
+}
+
+.competition img,
+.match img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.match td:nth-child(1) {
+    width: 3rem;
+}
+
+.match td:nth-child(2) {
+    width: 40rem;
+}
+
+.competition th {
+    color: white;
+    background-color: #023a6a;
+}
+
+.match td:first-child,
+.match td:last-child {
+    text-align: center;
+    vertical-align: middle;
+}

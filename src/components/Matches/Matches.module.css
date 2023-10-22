@@ -1,0 +1,10 @@
+.root {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.root table {
+    text-align: left;
+}

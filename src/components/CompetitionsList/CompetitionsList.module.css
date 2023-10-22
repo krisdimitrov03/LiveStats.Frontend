@@ -1,3 +1,16 @@
-.nationalityCompetitions img {
-    height: 20px;
+.image {
+    margin-right: 1rem;
+    object-fit: contain;
+}
+
+.active {
+    border-radius: 0.7rem!important;
+    background-color: rgb(214, 214, 214);
+    font-weight: bold;
+}
+
+.active:hover {
+    border-radius: 0.7rem!important;
+    background-color: rgb(214, 214, 214)!important;
+    font-weight: bold;
 }
